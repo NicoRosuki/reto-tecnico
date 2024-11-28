@@ -3,7 +3,7 @@ package orangehrm.pageobjects;
 import net.serenitybdd.screenplay.targets.Target;
 import net.thucydides.core.pages.PageObject;
 
-public class AddCandidate extends PageObject {
+public class CandidateForm extends PageObject {
 
         public static final Target FIRST_NAME = Target.the("First Name")
                         .locatedBy("[name='firstName']");
@@ -19,5 +19,8 @@ public class AddCandidate extends PageObject {
 
         public static final Target EMAIL = Target.the("Email")
                         .locatedBy("//label[text()='Email']/../following-sibling::div/input");
+
+        public static final Target KEYWORDS = Target.the("Keywords")
+                        .locatedBy("[placeholder='Enter comma seperated words...']");
 
 }
